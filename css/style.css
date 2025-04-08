@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header::before {
+    height: 30vh;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("https://s3-alpha-sig.figma.com/img/dafe/fd94/40637dd9b0240098474b6d8dd9487d8c?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=E7EUjag7ICPvRS2kwOI4JERWExfClowlkTzBrxvSohcCmePiPrZ82prZgJKmGgx-IzQ6lNv7YrzdNZhyYsMtc0f6~1UOqwgfEjFgG5P5Di4sFMa1JtuyinKq2fKJCUSBDR~6U3-2spLWUT4v-dR~fH6SZ7hWze8FzMy8KSlqXBPsGvKc6eK6z8-EDOIIQhTRZikuWgSg0ahBKJ1wFmu7Ian0e1es1Zc6Yp033u~-CQj6LKPVJFimyVXedKAXJ-WjMLd-5Yqrt79BBvmUrVS4ALI~WjYx6rRmnwqooWFsrNpBOd7~O8RK7G5QyLQBfGyk4MCZmKQVFMUMHl~rUa~4Xg__");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+    z-index: -1;
+    filter: brightness(40%);
+}
+
+header {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    padding: 2em;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+a#my-watchlist {
+    color: white;
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+/* Search Box */
+form.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+    color: #6B7280;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+form.search-box i {
+    padding: .75em;
+}
+
+form.search-box input {
+    flex: 1;
+    border: none;
+    /* outline: none; */
+    padding: .75em;
+}
+
+form.search-box button {
+    border: 1px solid #D1D5DB;
+    background-color: #F9FAFB;
+    padding: .75em 1.25em;
+    cursor: pointer;
+    
+}
+
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+
+div.placeholder {
+    color: #DFDDDD;
+    text-align: center;
+}
+
+i.custom-icon {
+    font-size: 4rem;
+}
+
+div.placeholder p {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+}
