@@ -48,14 +48,17 @@ a#my-watchlist {
 /* Search Box */
 form.search-box {
     display: flex;
-    width: 100%;
-    max-width: 500px;
+    width: 90%;
     border: 1px solid #D1D5DB;
     border-radius: 8px;
     overflow: hidden;
     background-color: white;
     color: #6B7280;
     box-shadow: 0px 1px 2px 0px #0000000D;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-self: center;
 }
 
 form.search-box i {
@@ -65,8 +68,8 @@ form.search-box i {
 form.search-box input {
     flex: 1;
     border: none;
-    /* outline: none; */
     padding: .75em;
+    width: 100%;
 }
 
 form.search-box button {
