@@ -29,19 +29,19 @@
 
         </div>
         <header>
-            <h1>Find your film</h1>
-            <a id="my-watchlist" href="#">My Watchlist</a>
+            <h1 id="title">Find your film</h1>
+            <a id="toggle" class="my-watchlist" href="#">My Watchlist</a>
         </header>
         <form class="search-box">
             <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" name="search" id="search" placeholder="Search for a movie">
             <button id="search-submit" type="submit">Search</button>
         </form>
-        <main>
-            <!-- <div class="placeholder">
+        <main class="centered">
+            <div class="placeholder">
                 <i class="fa-solid fa-film custom-icon"></i>
                 <p>Start exploring</p>
-            </div> -->
+            </div>
 
             <!-- <div id="ID" class="movie">
                 <img class="poster"
@@ -57,13 +57,13 @@
                             <p class="runtime">117 min</p>
                             <p class="genre">Action, Drama, Sci-fi</p>
                         </div>
-                        <span class="add-watchlist"><i class="fa-solid fa-circle-plus"></i> Watchlist</span>
+                        <span class="add-watchlist" data-movie="ID"><i class="fa-solid fa-circle-plus"></i> Watchlist</span>
                     </div>
                     <p class="plot">A blade runner must pursue and terminate four replicants who stole a ship in space,
                         and have returned to Earth to find their creator.</p>
                 </section>
             </div> -->
-            
+
         </main>
     </div>
     <script type="module" src="./index.js"></script>

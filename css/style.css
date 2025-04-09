@@ -33,13 +33,13 @@ header {
     padding: 2em;
 }
 
-header h1 {
+h1#title {
     font-size: 2rem;
     font-weight: 800;
     margin: 0;
 }
 
-a#my-watchlist {
+a#toggle {
     color: white;
     text-decoration: none;
     margin: 1em 0;
@@ -68,6 +68,7 @@ form.search-box i {
 form.search-box input {
     flex: 1;
     border: none;
+    outline: none;
     padding: .75em;
     width: 100%;
 }
@@ -88,6 +89,10 @@ main {
     padding-top: 1.5em;
 }
 
+.centered {
+    justify-content: center;
+}
+
 div.placeholder {
     color: #DFDDDD;
     text-align: center;
@@ -103,13 +108,23 @@ div.placeholder p {
     margin: 0;
 }
 
+div.placeholder p.desc {
+    margin-bottom: .5em;
+}
+
+div.placeholder span {
+    color: #363636;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
 div.movie {
     color: #111827;
     display: flex;
     border-bottom: 1.5px solid #E5E7EB;
     width: 85%;
     margin: 0 auto;
-    padding-block: 1em;
+    padding-block: 1.5em;
     gap: 1em;
 }
 
@@ -138,7 +153,7 @@ section.details {
     gap: .75em;
 }
 
-section.details div {
+div.detail-body {
     display: grid;
     grid-template-areas:
         " misc "
@@ -147,7 +162,7 @@ section.details div {
     row-gap: .5em;
 }
 
-section.details div.detail-header {
+div.detail-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,15 +173,16 @@ section.details p {
     margin: 0;
 }
 
-section.details div.misc {
+div.misc {
     grid-area: misc;
     display: flex;
     flex-direction: row;
     gap: .5em;
 }
 
-span.add-watchlist {
+span.toggle-watchlist {
     grid-area: watch;
+    width: fit-content;
     font-size: .75rem;
     cursor: pointer;
 }
@@ -174,4 +190,82 @@ span.add-watchlist {
 section.details p.plot {
     color: #6B7280;
     font-size: .75rem;
+}
+
+@media(min-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 10em;
+    }
+
+    h1#title {
+        font-size: 3rem;
+    }
+
+    form.search-box {
+        width: 85%;
+    }
+
+    i.custom-icon {
+        font-size: 5em;
+    }
+
+    div.placeholder p {
+        font-size: 1.5em;
+    }
+
+    div.placeholder span {
+        font-size: 1em;
+    }
+
+    div.movie {
+        padding-block: 2.5em;
+        gap: 2em;
+    }
+
+    img.poster {
+        width: 200px;
+    }
+
+    section.details {
+        gap: 1em;
+    }
+
+    div.detail-header {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    h3.movie-title {
+        font-size: 1.75rem;
+    }
+
+    span.rating {
+        font-size: 1.25rem;
+    }
+
+    div.detail-body {
+        display: flex;
+        gap: 3em;
+    }
+
+    div.misc {
+        gap: 1rem;
+    }
+
+    div.misc p {
+        font-size: 1rem;
+    }
+
+    span.toggle-watchlist {
+        font-size: 1rem;
+    }
+
+    section.details p.plot {
+        font-size: 1.25rem;
+    }
 }
