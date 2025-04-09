@@ -12,7 +12,7 @@ const watchlist = []
 // getData()
 
 async function getData(
-    url = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(search)}`
+    url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(search)}`
 ) {
     // Add Loading Screen
     main.innerHTML = `
@@ -127,7 +127,7 @@ form.addEventListener("submit", function (e) {
     const formData = new FormData(form)
     const dataObj = Object.fromEntries(formData.entries())
 
-    const url = `http://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(dataObj.search)}`
+    const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${encodeURIComponent(dataObj.search)}`
 
     getData(url)
 })
