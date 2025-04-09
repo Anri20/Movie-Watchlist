@@ -77,7 +77,6 @@ form.search-box button {
     background-color: #F9FAFB;
     padding: .75em 1.25em;
     cursor: pointer;
-    
 }
 
 
@@ -85,8 +84,8 @@ form.search-box button {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 70vh;
+    padding-top: 1.5em;
 }
 
 div.placeholder {
@@ -102,4 +101,77 @@ div.placeholder p {
     font-size: 1.125rem;
     font-weight: 700;
     margin: 0;
+}
+
+div.movie {
+    color: #111827;
+    display: flex;
+    border-bottom: 1.5px solid #E5E7EB;
+    width: 85%;
+    margin: 0 auto;
+    padding-block: 1em;
+    gap: 1em;
+}
+
+img.poster {
+    width: 100px;
+    object-fit: contain;
+}
+
+h3.movie-title {
+    color: #000000;
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+span.rating {
+    font-size: .75rem;
+}
+
+span.rating i {
+    color: #FEC654;
+}
+
+section.details {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+}
+
+section.details div {
+    display: grid;
+    grid-template-areas:
+        " misc "
+        " watch "
+    ;
+    row-gap: .5em;
+}
+
+section.details div.detail-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.details p {
+    font-size: .625rem;
+    margin: 0;
+}
+
+section.details div.misc {
+    grid-area: misc;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+span.add-watchlist {
+    grid-area: watch;
+    font-size: .75rem;
+    cursor: pointer;
+}
+
+section.details p.plot {
+    color: #6B7280;
+    font-size: .75rem;
 }
